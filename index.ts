@@ -19,7 +19,7 @@ import fs from "fs-extra";
           "**/*(.env|*.env|.env*)",
           {
             cwd,
-            ignore: "**/(node_modules|.git)/**",
+            ignore: "**/{.git,node_modules}/**",
             dot: true,
           },
           (err, files) => {
