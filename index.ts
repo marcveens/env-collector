@@ -16,7 +16,7 @@ import fs from "fs-extra";
     for (const cwd of cwdList) {
       await new Promise((resolve) => {
         glob(
-          "**/*(.env|*.env|.env*)",
+          "**/*(.env|*.env|.env*|local.settings.json)",
           {
             cwd,
             ignore: "**/{.git,node_modules}/**",
